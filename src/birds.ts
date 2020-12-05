@@ -3,6 +3,7 @@
 // By convention the first letter in the name of a class is capitalized;
 // this will help us tell thed difference between a class and an object
 
+
 class Bird {
     // We declare properties by just dropping them into the class like so
     name: string
@@ -16,6 +17,11 @@ class Bird {
     // To make a constructor, drop in a function with the name 'constructor'
     // define parameters for the properties that will need to be set when creating a new 
     // object from this class
+    /**
+     * 
+     * @param name Needs to be the name of the bird you will be using
+     * @param canFly Needs to be a boolean of whether or not the bird can fly
+     */
     constructor(name: string, canFly: boolean) {
         // The word 'this' refers to an object made from the class;
         // here, it means that when the constructor is called, that version of the 
@@ -32,6 +38,8 @@ let birds: Array<Bird> = [
     new Bird("Pidgeon", true),
     new Bird("Emu", false),
 ]
+
+let myBird: Bird = new Bird('Goldfinch', true)
 birds.forEach((item: Bird) => {
     console.log(item)
 })

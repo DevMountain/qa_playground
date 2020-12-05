@@ -26,6 +26,7 @@ let birds: Array<Bird> = [
     new Bird("Pidgeon", true),
     new Bird("Emu", false),
 ]
+
 birds.forEach((item: Bird) => {
     // To use a method on an object, you use the dot notation to acces that method,
     // in this case, item.flapWings()

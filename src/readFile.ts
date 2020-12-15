@@ -1,5 +1,4 @@
 export {}
-
 const fs = require('fs')
 
 fs.readFile(`${__dirname}/personDre.json`, (e, data) => {

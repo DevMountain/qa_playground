@@ -14,3 +14,6 @@ test("Amazon Practice", async () => {
     expect(resultText).toContain("The Child")
     await (await driver).quit()
 })
+
+
+console.log('Hello World')

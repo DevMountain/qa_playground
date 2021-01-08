@@ -1,4 +1,3 @@
-import { Driver } from 'selenium-webdriver/chrome'
 import { Google } from '../pageObjects/googlePage'
 const fs = require('fs')
 
